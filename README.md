@@ -1,2 +1,2 @@
 # recursive_ftp_upload
-Powershell funcion to upload files recursivelly using FTP.
+Tired of powershell ftp upload recursivelly that does not work? This one works! Just read the comments in the firsts script lines to use it correctly.
