@@ -4,6 +4,7 @@
 #   DO NOT USE A BACKSLASH AS LAST CHARACTER IN THE FULL LOCAL BASE PATH. Not tested, sorry.
 # $ftp_base_path -> Full path in the FTP location, including the server addres. e.g. ftp://ftp.myfancyaddress.com/htdocs/wp-content/themes/my_wordpress_theme
 #   DO NOT USE A BACKSLASH AS LAST CHARACTER IN THE FULL FTP BASE PATH TOO. Also not tested, sorry.
+# NOTE: The full base ftp path must already exists. Since from, all the others folders are recursively created.
 
 Function upload_ftp_recursive($ftp_user, $ftp_pass, $local_full_base_path, $ftp_base_path) {
 
@@ -54,3 +55,7 @@ Function upload_ftp_recursive($ftp_user, $ftp_pass, $local_full_base_path, $ftp_
         }
     }
 }
+
+# Example of the correct funcion usage:
+
+# upload_ftp_recursive "jonh" "you_will_never_know" "C:\Users\john\devfiles\my_wordpress_theme" "ftp://ftp.myfancyaddress.com/htdocs/wp-content/themes/my_wordpress_theme"
